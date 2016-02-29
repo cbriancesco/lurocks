@@ -1,8 +1,81 @@
 // ---------------------------------------- //
 // --------------- MAIN HEADER ------------ //
 // ---------------------------------------- //
+
+html,
+body
+    width 100%
+    height 100%
+
 .main__header
-    background $blue
+    overflow hidden
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 124px
+    border-top 10px solid $white
+    
+.main__header__title
+    height 124px
+    width 317px
+    top 0
+    left 50%
+    margin-left -162px
+    position absolute
+    
+.main__link
+    width 100%
+    height 100%
+    background url('../img/defaults/logo-form.png') center top
+    text-indent -9999px
+    position relative
+    display block
+    
+    &:after
+        width 100%
+        height 100%
+        content ''
+        display block
+        background url('../img/defaults/lurocks-logo.svg') center -28px no-repeat
+        background-size 150px
+        position absolute
+        top 0
+        left 0
+    
+.main__header__holder
+    max-width 1111px
+    margin 0 auto
+    
+.main__header__nav
+    margin-top 30px
+    
+.main__header__nav,
+.main__header__holder
+    overflow hidden
+
+.main__header__item
+    margin 0 5px
+
+.main__header__item,
+.nav__left
+    float left
+
+.nav__right
+    float right
+    
+.main__header__link
+    background rgba(0,0,0,0.6)
     color $white
+    display block
+    line-height 15px
+    text-aling center
+    border-radius 20px
+    padding 14px
+    font-size 12px
+    text-transform uppercase
+    min-width 80px
+    text-align center
+    border 1px solid rgba(255,255,255,0.6)
     
     

@@ -1,11 +1,15 @@
 //- -------------- Header ---------------- -//
 //- -------------------------------------- -//
 
-- var upper = [{name: 'Home', url: '#'}, {name: 'Who we are', url: '#'}, {name: 'Our History', url: '#'}, {name: 'Contact Us', url: '#'}]
-
 header.main__header
+    h1.main__header__title #[a.main__link(href='#') Lurocks]
     nav.main__header__holder
-        ul.main__header__nav
-            - for page in upper
-                li.main__header__item
-                    mixin basicLink(page.name, page.url, 'main__header__link')
+        ul.main__header__nav.nav__left
+            li.main__header__item #[a.main__header__link(href='#') Conozcanos]
+            li.main__header__item #[a.main__header__link(href='#') Nuestros Productos]
+            li.main__header__item #[a.main__header__link(href='#') Servicios]
+
+        ul.main__header__nav.nav__right
+            li.main__header__item #[a.main__header__link(href='#') Nuestros Proyectos]
+            li.main__header__item #[a.main__header__link(href='#') Testimonio]
+            li.main__header__item #[a.main__header__link(href='#') Contactenos]

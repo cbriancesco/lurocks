@@ -10,7 +10,13 @@ block append head
 
 block content
     //- content goes here
-    include ../modules/sample-content
+    .generic__container
+        include ../modules/big-slider
+
+    section
+        include ../modules/page-title
+
+        include ../modules/info-section
 
 block append footer-scripts
     script(src="js/homepage.js")

@@ -1,0 +1,45 @@
+// ------------------------------------------- //
+// -------------- TITLE SEPARATOR ------------ //
+// ------------------------------------------- //
+
+.page__title__holder
+    position relative
+    background-color $blue1
+    
+.page__title
+    text-align center
+    position absolute
+    top -60px
+    width 100%
+    
+.page__title__text
+    background-color $blue1
+    color $white
+    display inline-block
+    line-height 60px
+    position relative
+
+    &:before,
+    &:after
+        content ''
+        display block 
+        height 60px
+        width 66px
+        position absolute
+        top 0
+        background-image url(../img/defaults/title-bar.png)
+        background-size auto 60px
+        
+    &:before
+        left -66px
+        
+    &:after
+        right -66px
+        background-position right top
+        
+.page__title__nav
+    overflow hidden
+    padding 10px 20px
+
+
+
