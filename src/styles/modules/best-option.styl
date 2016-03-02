@@ -2,7 +2,105 @@
 // -------------- BEST OPTION ------------ //
 // --------------------------------------- //
 
+.best__option__container
+    overflow hidden
+    max-width 1000px
+    margin 0 auto
+    padding 50px 0
+    
+    
+.best__option__holder
+    box-sizing border-box
+    padding 0 20px
+    
+    &.left
+        float left
+        width 50%
+    
+.best__option__title
+    font-size 20px
+    line-height 26px
+    padding 0 0 30px 0
+    text-transform uppercase
+    color $redgray
+    
+.best__option__subtitle
+    font-size 26px
+    line-height 26px
+    padding 0 0 30px 0
+    color $gray3
+    font-family $font3
+    
+.best__option__text
+    padding 0 0 20px 0
+    font-size 18px
+    line-height 20px
+    color $gray3
+    font-family $font3
+    
 
+.best__option__list
+    color $gray3
+    font-family $font3
+    
+.best__option__item
+    line-height 24px
+    font-size 20px
+    position relative
+    padding 18px 20px 18px 70px
+    margin-bottom 20px
+    
+    &:before
+        content ''
+        display block
+        width 3px 
+        height 100%
+        background $red 
+        position absolute
+        top 60px
+        left 29px
+
+    &:after
+        content attr(data-number)
+        display block 
+        width 60px
+        height 60px
+        line-height 60px
+        border-radius 50%
+        background $blue1
+        position absolute
+        top 50%
+        left 0
+        margin-top -30px
+        text-align center
+        color $white
+        font-size 25px
+    
+    &:last-child:before
+        display none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
