@@ -18,14 +18,15 @@ mixin basicList(classlist, text, url, newclass, newTab)
 
 //- ------------ SOCIAL NAV ----------- -//
 //- ----------------------------------- -//
-mixin socialNav()
-    ul.social__nav
-        li.social__nav__item siguenos en 
+mixin socialNav(type)
+    ul.social__nav(class='social__nav__#{type}')
+        - if (type === 'cl')
+            li.social__nav__item siguenos en 
         li.social__nav__item
-            a.social__nav__link.icon-twitter-cl(href="#") #[span Twitter]
+            a.social__nav__link(href="#", class='icon-twitter-#{type}') #[span Twitter]
         li.social__nav__item
-            a.social__nav__link.icon-face-cl(href="#") #[span Facebook]
+            a.social__nav__link(href="#", class='icon-face-#{type}') #[span Facebook]
         li.social__nav__item
-            a.social__nav__link.icon-google-cl(href="#") #[span Gmail]
+            a.social__nav__link(href="#", class='icon-google-#{type}') #[span Gmail]
         li.social__nav__item
-            a.social__nav__link.icon-mail-cl(href="#") #[span email]
+            a.social__nav__link(href="#", class='icon-mail-#{type}') #[span email]

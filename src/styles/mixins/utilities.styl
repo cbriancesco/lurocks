@@ -74,31 +74,53 @@ new_breakpoint(min, max, orient)
 .social__nav
     float right
     overflow hidden
-    border 1px solid $blue0
-    color $blue0
-    border-radius 20px
-    
-.social__nav__item
-    float left
-    line-height 40px
-    padding 0 5px
-    text-transform uppercase
     
 .social__nav__link
     display block
-    line-height 40px
-    color $blue0
-    font-size 26px
-    
     span 
         display inline-block
         text-indent -9999px
         
     &:hover
         color $white
+        
+.social__nav__item
+    float left
+        
 
-
-
+.social__nav__cl
+    border-radius 20px
+    border 1px solid $blue0
+    color $blue0
+    
+    .social__nav__item
+        line-height 40px
+        padding 0 5px
+        text-transform uppercase
+    
+    .social__nav__link
+        line-height 40px
+        color $blue0
+        font-size 26px
+        
+.social__nav__sq
+    .social__nav__item
+        float left
+        line-height 45px
+        padding 0 5px
+        text-transform uppercase
+        
+        &:nth-child(1),
+        &:nth-child(2)
+            .social__nav__link
+                font-size 50px
+                
+    .social__nav__link
+        line-height 45px
+        color $cyan2
+        font-size 45px
+        &:hover
+            color $orange
 
 
 

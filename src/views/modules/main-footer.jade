@@ -1,6 +1,26 @@
 //- -------------- Footer ---------------- -//
 //- -------------------------------------- -//
 
+div.propaganda
+    h1 construcción costa rica
+
 footer.main__footer
-    p.main__fotter__legal All content #[sup ®] 2015 Chattem, Inc. All rights reserved.
-                
+    div.main__footer__container
+        aside.side__holder.left
+            h2.articles__title Articulos de interes
+            ul.articles__list
+                li.articles__item
+                    a.articles__link(href='#') Article title
+                li.articles__item
+                    a.articles__link(href='#') Article title
+                li.articles__item
+                    a.articles__link(href='#') Article title
+
+            a.articles__link__more(href='#') Ver más...
+
+        div.side__holder.left
+            h2.articles__title.text-right Contactenos
+            nav.page__title__nav
+            +socialNav('sq')
+
+    p.main__footer__legal Copyright #[a(href='#') Lurocks] 2016. All rights reserved.

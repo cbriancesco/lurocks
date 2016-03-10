@@ -1,0 +1,74 @@
+// ------------------------------------------- //
+// -------------- PROJECTS SLIDER ------------ //
+// ------------------------------------------- //
+
+.projects__slider__container
+    background-color $blue3
+    position relative
+    padding-top 30px
+    
+.projects__slider__header
+    @extend .info__section__cta
+    width 320px
+    margin-left -160px
+
+.projects__slider
+    max-width $vp-desktop-min
+    margin 0 auto
+
+.projects__slider__link
+    &:hover
+        .projects__slider__img-holder
+            border-color $orange
+            
+
+.projects__slider__img-holder
+    display block
+    border-radius 50%
+    overflow hidden
+    width 200px
+    height 200px
+    margin 0 auto 20px
+    border 6px solid $blue5
+    
+.projects__slider__image
+    width auto
+    height 200px
+    
+.projects__slider__list
+    overflow hidden
+    width 100%
+    
+.projects__slider__item
+    float left
+    width 33.33%
+    padding 40px 0
+        
+.projects__slider__description,
+.projects__slider__title
+    color $white
+    text-align center
+    font-size 14px
+    line-height 18px
+    padding 10px 15px
+    font-family $font3
+    
+.projects__slider__title
+    font-size 20px 
+    line-height 24px
+    font-family $font2
+
+.projects__slider__footer
+    background-color $blue5
+    padding 20px 20px
+    
+.projects__slider__indication
+    color $white
+    font-size 14px
+    line-height 16px
+    text-align center
+    font-family $font3
+
+
+
+
